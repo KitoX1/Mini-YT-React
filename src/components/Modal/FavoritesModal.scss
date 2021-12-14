@@ -1,0 +1,25 @@
+.modal {
+  border-radius: 10px;
+
+  &__slider {
+    display: flex;
+  }
+
+  .ant-btn {
+    height: unset;
+    width: 100%;
+    padding: 6px 70px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  .ant-modal-content,
+  .ant-modal-header {
+    border-radius: 10px;
+  }
+  .ant-input-number {
+    margin: 0 0 0 20px !important;
+  }
+  .ant-slider {
+    width: 80%;
+  }
+}

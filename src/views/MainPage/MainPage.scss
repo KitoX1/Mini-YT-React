@@ -1,0 +1,147 @@
+main {
+  padding: 3% 15%;
+}
+
+.content {
+  position: relative;
+
+  &__breadcrumbs {
+    font-size: 16px;
+
+    .content__request {
+      font-weight: 500;
+      margin: 0 10px 0 5px;
+    }
+    .content__amount {
+      color: rgb(218, 218, 218);
+      font-size: 18px;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__loading {
+    text-align: center;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    z-index: 1;
+
+    .ant-spin-spinning {
+      margin-top: 60px;
+    }
+  }
+  &__videos {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 24%);
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  &__videoBlock {
+    line-height: 16px;
+
+    .content__videoTitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .content__chanel,
+    .content__date {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      color: rgb(150, 150, 150);
+      margin-bottom: 5px;
+    }
+  }
+  &__viewSwitch {
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+
+    .selected {
+      color: black;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .horizontal {
+    display: block;
+
+    .content__videoBlock {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .content__videoBlock > :last-child {
+      width: 50%;
+    }
+    img {
+      width: 20%;
+      margin-right: 20px;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.search {
+  &__default {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto !important;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+
+    .ant-input-group-wrapper {
+      display: block;
+    }
+  }
+
+  &__titleDefault {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__titleWithResult {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__withResult {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .ant-btn-lg {
+    padding: 6.4px 40px;
+  }
+}

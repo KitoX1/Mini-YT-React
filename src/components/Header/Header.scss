@@ -1,0 +1,15 @@
+.header {
+  padding: 0 calc(15% - 20px);
+  font-size: 16px;
+
+  &__logo {
+    width: 30px;
+  }
+  &__logout {
+    margin-left: auto;
+  }
+
+  .ant-menu-item {
+    padding: 10px 20px !important;
+  }
+}
